@@ -1,0 +1,220 @@
+.container {
+    background-color: whitesmoke;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: rgb(87, 100, 100);
+    gap: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.header li a {
+    text-decoration: none;
+    color: rgb(235, 230, 230);
+}
+
+.header li a:hover {
+    /* background-color: rgb(221, 216, 208); */
+    font-weight: 800;
+    color: white;
+    padding: 2px 8px;
+    transition: 0.3s;
+    transition-timing-function: linear;
+    border-radius: 5px;
+}
+
+.dropdown {
+    background-color: rgb(126, 119, 115);
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    display: flex;
+    margin-right: 20px;
+    padding: 20px;
+    margin-left: -10px;
+    padding-top: 10px;
+    margin-top: 2px;
+    color: aliceblue;
+
+}
+
+.dropdown ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dropdown li:hover {
+    background: rgb(215, 215, 233);
+    border-radius: 5px;
+    color: black;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.dropdown {
+    display: none;
+}
+
+li a:hover .dropdown {
+    display: block;
+}
+
+.search input {
+    border: 2px solid rgb(102, 99, 99);
+    border-radius: 10px;
+    color: rgb(34, 32, 32);
+    padding: 3px 20px;
+    border: none;
+}
+
+
+
+
+/* add css card-1 */
+
+
+
+.card-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex: wrap;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    border: 1px solid rgb(47, 146, 228);
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(237, 239, 240);
+    animation: forwards;
+}
+
+.card-header {
+    border-radius: 20px;
+
+}
+
+.card-content {
+    margin: 10px;
+
+}
+
+.content-1 {
+    list-style-type: none;
+    display: flex;
+    text-align: justify;
+    /* column-gap: 20px; */
+
+}
+
+p li {
+    display: inline;
+}
+
+.tag {
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 2px 5px;
+
+}
+
+.bg-yellow {
+    background: rgb(221, 221, 20);
+}
+
+.bg-whitish {
+    background: rgb(214, 209, 209);
+
+}
+
+img {
+    margin-left: 15px;
+}
+
+.content-2 {
+    font-size: small;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.card-footer {
+    margin: 10px;
+}
+
+#course-price {
+    /* gap: 10px; */
+    padding: 10px;
+    font-size: 20px;
+    color: blue;
+    margin-left: -5%;
+
+}
+
+#line-through {
+    text-decoration: line-through;
+}
+
+#Discount {
+    margin-left: 20px;
+    padding: 5px;
+    color: rgb(27, 151, 233);
+    background-color: rgba(197, 222, 230, 0.5);
+    border-radius: 14px;
+}
+
+#Subscription {
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+#Explore {
+    border: 1px solid blue;
+    color: blue;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+
+}
+
+#Explore:hover {
+    background-color: #c0b8b8;
+    transition: 0.4s linear;
+}
+
+#Buynow {
+    text-decoration: none;
+    border: 1px solid blue;
+    padding: 10px;
+    /* margin-inline: 50px; */
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(74, 74, 238);
+    color: white;
+
+}
+
+#Buynow:hover {
+    background-color: #887b7b;
+    transition: .4s linear;
+}
+
+/* add css card-2 */
