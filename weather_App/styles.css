@@ -1,0 +1,108 @@
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+.card {
+    width: 80%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 50px auto 0;
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.search {
+    background-color: hsl(171, 100%, 96%);
+    border-radius: 30px;
+    display: flex;
+    margin-bottom: 30px;
+    gap: 25%;
+    
+}
+/* remove input background color */
+input,
+select {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+
+input {
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+button img {
+    width: 20px;
+}
+
+button {
+    border-radius: 15px;
+}
+
+.bgcolorinput-searchicon {
+    background-color: hsl(171, 100%, 96%);
+    border: 0;
+}
+
+h1.temp {
+    margin: 5px;
+    font-size: 35px;
+}
+
+h2.city {
+    margin: 0;
+    font-size: 35px;
+}
+
+.details {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.col img {
+    width: 20px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    background-image: white;
+}
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+p {
+    margin: 5px;
+}
+
+.Weather {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .search{
+        gap:5%;
+        margin-left: 10px;
+    }
+    .details{
+        gap: 5px;
+       
+    }
+    
+  }
+   
