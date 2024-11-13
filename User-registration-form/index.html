@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+   <CENTER> <h1 style="background-color: #7f8c8d;">REGISTRATION FORM</h1></CENTER>
+     <div class="container">
+        <div class="Enterdetails">
+            
+            <label for="FirstName"> FirstName:</label>
+            <input type="text" id="FirstName" class="padding " placeholder="enter first name" required> <br><br>
+            <label for="LastName">LastName:</label>
+            <input type="text" id="LastName" class="padding"  placeholder="enter last name" required><br><br>
+            <label for="date">DOB:</label>
+            <input type="date" id="date"  class="padding" placeholder="enter date of birth" required><br><br>
+            <label for="contact"> contact:</label>
+            <input type="text" id="contact" class="padding" placeholder="enter phone no" required><br><br>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" class="padding" placeholder="enter email" required><br><br>
+            <label for="place">Address</label>
+            <input type="text" id="place" class="padding" placeholder="enter you city" required><br><br>
+            <button onclick="submit()">submit</button>
+        
+        </div>
+
+        <div id="userdetails" style="display: none;">
+            <h3>User Information</h3><br>
+            <p id="uFirstName"></p><br>
+            <p id="uLastName"></p><br>
+            <p id="udate"></p><br>
+            <p id="ucontact"> </p><br>
+            <p id="uEmail"></p><br>
+            <p id="uplace"></p><br>
+        </div>
+    </div>
+
+  
+    <script src="script.js"></script>
+</body>
+
+</html>
