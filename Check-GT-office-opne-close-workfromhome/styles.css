@@ -1,0 +1,35 @@
+body{
+    background-color: #dadde0;
+    border-radius: 50px;
+}
+ .container{
+    align-content: center;
+ }
+
+
+h3{
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.input-btn{display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#btn{
+    padding: 10px 15px ;
+    border-radius: 10px;
+}
+#Day{
+    text-transform:capitalize;
+    padding: 8px;
+    border-radius: 10px;
+    border:none;
+    outline: none;
+}
+p{
+    text-align: center;
+    margin-top: 20px; 
+    font-size: 20px;  
+}
