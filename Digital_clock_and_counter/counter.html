@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        .container {
+            background-color: rgb(171, 209, 243);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: content-box;
+            width: 300px;
+            margin: auto;
+            margin-top:10%;
+           }
+           .counter{
+            width: fit-content;
+           }
+        #num {
+            color: green;
+            font-size: 40px;
+        }
+        .btn {
+            display: flex;
+            gap: 20px; 
+        }
+        button{
+            padding: 5px;
+            border-radius: 5px;
+            background-color: rgb(132, 132, 150);   
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="counter">
+            <div>
+                <p id="num">3</p>
+            </div>
+            <div class="btn">
+                <button id="increment">increment</button>
+                <button id="reset"> reset</button>
+                <button id="decrement">decrement</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let count=3;
+        const number=document.getElementById("num");
+        // console.log(number.innerHTML)
+        const inc=document.getElementById("increment")
+        const dec=document.getElementById("decrement")
+        const reset=document.getElementById("reset")
+        inc.addEventListener('click',fun)
+        function fun(){
+            count++;
+            number.innerHTML=count;
+        }
+        dec.addEventListener('click',fun1)
+        function fun1(){
+            count--;
+            number.innerHTML=count;
+        }
+        reset.addEventListener('click',fun2)
+        function fun2(){
+            count=0;
+            number.innerHTML=count;
+        }
+    </script>
+</body>
+</html>
