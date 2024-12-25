@@ -39,6 +39,5 @@ button.addEventListener("click", function () {
       search_box.value=''
     } else {
       alert("Please enter a username!");
-    }
-         
+    }       
 });
