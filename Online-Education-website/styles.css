@@ -205,3 +205,115 @@ img {
     background-color: #887b7b;
     transition: .4s linear;
 }
+
+/* @media query */
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+    .header {
+        /* flex-direction: column; */
+        padding: 20px;
+        gap: 10px;
+        font-size: 16px;
+    }
+    .search-box{
+        display: none;
+    }
+    .dropdown {
+        position: static;
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .search input {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        gap: 15px;
+        margin: 10px;
+    
+    }
+    .course-img{
+        width: 300px;
+    }
+
+    .course-card {
+        width: 100%;
+        box-shadow: 5px 5px rgb(237, 239, 240);
+    }
+
+    #Explore, #Buynow {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        
+    }
+    
+}
+
+/* Medium devices (tablets, 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 18px;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .dropdown {
+        position: static;
+        margin: 0;
+        padding: 15px;
+        width: auto;
+    }
+
+    .card-container {
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .course-card {
+        width: 45%;
+        box-shadow: 7px 7px rgb(237, 239, 240);
+    }
+
+    #Explore, #Buynow {
+        width: auto;
+        padding: 15px;
+    }
+}
+
+/* Large devices (desktops, more than 1024px) */
+@media (min-width: 1025px) {
+    .header {
+        font-size: 20px;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .dropdown {
+        position: absolute;
+        margin-right: 20px;
+    }
+
+    .card-container {
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .course-card {
+        width: 30%;
+        box-shadow: 10px 10px rgb(237, 239, 240);
+    }
+
+    #Explore, #Buynow {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
